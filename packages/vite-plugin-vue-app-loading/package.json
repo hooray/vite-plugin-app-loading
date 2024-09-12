@@ -1,0 +1,39 @@
+{
+  "name": "vite-plugin-vue-app-loading",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/hooray/vite-plugin-vue-app-loading",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hooray/vite-plugin-vue-app-loading.git",
+    "directory": "packages/vite-plugin-vue-app-loading"
+  },
+  "bugs": {
+    "url": "https://github.com/hooray/vite-plugin-vue-app-loading/issues"
+  },
+  "keywords": [],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./client": {
+      "types": "./client.d.ts"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "tsup": "^8.2.4",
+    "vite": "^5.4.4"
+  }
+}

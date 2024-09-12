@@ -1,0 +1,21 @@
+{
+  "name": "@hooray/monorepo",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "author": "Hooray <304327508@qq.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/hooray/vite-plugin-vue-app-loading",
+  "keywords": [],
+  "scripts": {
+    "dev": "pnpm build && pnpm --filter example dev",
+    "build": "pnpm --filter vite-plugin-vue-app-loading build",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.5.1",
+    "@types/node": "^22.5.4",
+    "eslint": "^9.10.0"
+  }
+}
