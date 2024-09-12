@@ -3,8 +3,9 @@
   "type": "module",
   "version": "0.1.5",
   "description": "",
-  "author": "",
+  "author": "Hooray <304327508@qq.com>",
   "license": "MIT",
+  "readme": "https://github.com/hooray/vite-plugin-vue-app-loading#readme",
   "homepage": "https://github.com/hooray/vite-plugin-vue-app-loading",
   "repository": {
     "type": "git",

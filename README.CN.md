@@ -42,7 +42,7 @@ loadingFadeOut()
 - 在你的 `global.d.ts` 文件添加下面这句：
 
   ```ts
-  /// <reference types="vite-plugin-terminal/client" />
+  /// <reference types="vite-plugin-vue-app-loading/client" />
   ```
 
 - 在你的 `tsconfig.json` 中，将以下内容添加到你的 `compilerOptions.types` 数组中：
