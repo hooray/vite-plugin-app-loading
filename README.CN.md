@@ -2,19 +2,19 @@
 
 [![NPM version](https://img.shields.io/npm/v/vite-plugin-vue-app-loading?color=a1b858&label=)](https://www.npmjs.com/package/vite-plugin-vue-app-loading)
 
-**English** | [中文](./README.CN.md)
+[English](./README.md) | **中文**
 
-Add a loading animation to your Vue app.
+给 Vue 应用添加一个加载动画。
 
 ![vite-plugin-vue-app-loading](https://github.com/user-attachments/assets/95217497-7022-43c1-987a-cec101db7671)
 
-## Installation
+## 安装
 
 ```bash
 npm i vite-plugin-vue-app-loading -D
 ```
 
-## Usage
+## 使用
 
 ```ts
 // vite.config.ts
@@ -27,7 +27,7 @@ export default defineConfig({
 })
 ```
 
-Hide the loading animation at the right time:
+在合适的时机隐藏加载动画：
 
 ```ts
 // src/main.ts
@@ -35,17 +35,17 @@ import { loadingFadeOut } from 'virtual:app-loading'
 loadingFadeOut()
 ```
 
-## Types
+## 类型
 
-There are two ways of telling typescript about the types of the virtual import:
+有两种方法可以告诉 TypeScript 虚拟导入的类型：
 
-- In your `global.d.ts` file add the following line:
+- 在你的 `global.d.ts` 文件添加下面这句：
 
   ```ts
   /// <reference types="vite-plugin-terminal/client" />
   ```
 
-- In your `tsconfig.json` add the following to your compilerOptions.types array:
+- 在你的 `tsconfig.json` 中，将以下内容添加到你的 `compilerOptions.types` 数组中：
 
   ```json
   {
@@ -59,9 +59,9 @@ There are two ways of telling typescript about the types of the virtual import:
   }
   ```
 
-## Custom animations
+## 自定义动画
 
-Create a `loading.html` file at the root directory:
+在应用根目录创建 `loading.html` 文件：
 
 ```html
 <style>
@@ -93,12 +93,12 @@ export default defineConfig({
 ![](https://github.com/user-attachments/assets/b05f8157-2f06-44af-b8bb-fa53701daf29)
 
 > [!TIP]
-> You can find inspiration from the [CSS Loaders](https://css-loaders.com/) website, which offers 600+ CSS-only loading animations.
+> 你可以从 [CSS Loaders](https://css-loaders.com/) 网站中找找灵感，它提供了 600+ 个纯 CSS 的加载动画。
 
-## Example
+## 范例
 
 [Fantastic-admin](https://github.com/fantastic-admin/basic)
 
-## Thanks
+## 致谢
 
-Thanks to [vue-vben-admin](https://github.com/vbenjs/vue-vben-admin/tree/7bcb973d6595545e2cef6ad4006d781b3176f67b/internal/vite-config/src/plugins/inject-app-loading) for the inspiration.
+感谢 [vue-vben-admin](https://github.com/vbenjs/vue-vben-admin/tree/7bcb973d6595545e2cef6ad4006d781b3176f67b/internal/vite-config/src/plugins/inject-app-loading) 提供的灵感。
