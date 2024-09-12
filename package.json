@@ -12,7 +12,7 @@
     "dev": "pnpm build && pnpm --filter example dev",
     "build": "pnpm --filter vite-plugin-vue-app-loading build",
     "preinstall": "npx only-allow pnpm",
-    "release": "bumpp"
+    "release": "bumpp -r"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.5.1",
