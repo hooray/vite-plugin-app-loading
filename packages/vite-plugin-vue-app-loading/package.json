@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-vue-app-loading",
   "type": "module",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "",
   "author": "Hooray <304327508@qq.com>",
   "license": "MIT",
