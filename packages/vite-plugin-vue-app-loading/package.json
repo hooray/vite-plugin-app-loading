@@ -5,7 +5,6 @@
   "description": "",
   "author": "Hooray <304327508@qq.com>",
   "license": "MIT",
-  "readme": "https://github.com/hooray/vite-plugin-vue-app-loading#readme",
   "homepage": "https://github.com/hooray/vite-plugin-vue-app-loading",
   "repository": {
     "type": "git",
@@ -28,6 +27,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
+    "client.d.ts",
     "dist"
   ],
   "scripts": {
