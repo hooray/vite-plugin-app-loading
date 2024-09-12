@@ -28,7 +28,8 @@
   "types": "dist/index.d.ts",
   "files": [
     "client.d.ts",
-    "dist"
+    "dist",
+    "loading.html"
   ],
   "scripts": {
     "build": "tsup"
