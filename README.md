@@ -2,6 +2,8 @@
 
 [![NPM version](https://img.shields.io/npm/v/vite-plugin-vue-app-loading?color=a1b858&label=)](https://www.npmjs.com/package/vite-plugin-vue-app-loading)
 
+![vite-plugin-vue-app-loading](https://github.com/user-attachments/assets/95217497-7022-43c1-987a-cec101db7671)
+
 给 Vue 应用添加一个加载动画。
 
 ## 安装
@@ -72,6 +74,8 @@ export default defineConfig({
   ],
 })
 ```
+
+![](https://github.com/user-attachments/assets/b05f8157-2f06-44af-b8bb-fa53701daf29)
 
 > [!TIP]
 > 你可以从 [CSS Loaders](https://css-loaders.com/) 网站中找找灵感，它提供了 600+ 个纯 CSS 的加载动画。

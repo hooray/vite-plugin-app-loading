@@ -44,7 +44,7 @@ export default function (appLoadingHtmlPath?: string): PluginOption {
     enforce: 'pre',
     transformIndexHtml: {
       handler: async html => html.replace(/<\/body>/, `${
-        `<div data-app-loading>${await getAppLoadingHtml(appLoadingHtmlPath)}</div>`
+        `<div data-app-loading style="position: fixed; top: 0; left: 0; z-index: 10000; width: 100vw; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; user-select: none;">${await getAppLoadingHtml(appLoadingHtmlPath)}</div>`
       }</body>`),
       order: 'pre',
     },
