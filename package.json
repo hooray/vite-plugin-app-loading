@@ -1,7 +1,7 @@
 {
   "name": "@hooray/monorepo",
   "type": "module",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": true,
   "description": "",
   "author": "Hooray <304327508@qq.com>",
