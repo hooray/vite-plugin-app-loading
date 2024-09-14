@@ -4,7 +4,7 @@
 
 **English** | [中文](./README.CN.md)
 
-Add a loading animation to your Vue app.
+Add a loading animation to your website
 
 ![vite-plugin-app-loading](https://github.com/user-attachments/assets/95217497-7022-43c1-987a-cec101db7671)
 

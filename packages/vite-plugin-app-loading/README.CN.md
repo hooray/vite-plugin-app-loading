@@ -4,7 +4,7 @@
 
 [English](./README.md) | **中文**
 
-给 Vue 应用添加一个加载动画。
+给网站添加一个加载动画
 
 ![vite-plugin-app-loading](https://github.com/user-attachments/assets/95217497-7022-43c1-987a-cec101db7671)
 
