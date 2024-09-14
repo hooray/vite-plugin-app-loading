@@ -93,7 +93,11 @@ export default defineConfig({
 ![](https://github.com/user-attachments/assets/b05f8157-2f06-44af-b8bb-fa53701daf29)
 
 > [!TIP]
-> You can find inspiration from the [CSS Loaders](https://css-loaders.com/) website, which offers 600+ CSS-only loading animations.
+> You can find inspiration from the following websites, which all provide CSS-only loading animations that are perfect for use with this plugin.
+>
+> - [CSS Loaders](https://css-loaders.com/)
+> - [CSS Loader Generator](https://10015.io/tools/css-loader-generator)
+> - [Loaders](https://cssloaders.github.io/)
 
 ## Example
 

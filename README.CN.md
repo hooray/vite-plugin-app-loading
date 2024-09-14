@@ -93,7 +93,11 @@ export default defineConfig({
 ![](https://github.com/user-attachments/assets/b05f8157-2f06-44af-b8bb-fa53701daf29)
 
 > [!TIP]
-> 你可以从 [CSS Loaders](https://css-loaders.com/) 网站中找找灵感，它提供了 600+ 个纯 CSS 的加载动画。
+> 你可以从下列网站中找找灵感，它们都提供了纯 CSS 的加载动画，非常适合搭配本插件一起使用。
+>
+> - [CSS Loaders](https://css-loaders.com/)
+> - [CSS Loader Generator](https://10015.io/tools/css-loader-generator)
+> - [Loaders](https://cssloaders.github.io/)
 
 ## 范例
 
