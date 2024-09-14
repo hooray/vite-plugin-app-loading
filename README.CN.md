@@ -1,24 +1,24 @@
-# vite-plugin-vue-app-loading
+# vite-plugin-app-loading
 
-[![NPM version](https://img.shields.io/npm/v/vite-plugin-vue-app-loading?color=a1b858&label=)](https://www.npmjs.com/package/vite-plugin-vue-app-loading)
+[![NPM version](https://img.shields.io/npm/v/vite-plugin-app-loading?color=a1b858&label=)](https://www.npmjs.com/package/vite-plugin-app-loading)
 
 [English](./README.md) | **中文**
 
 给 Vue 应用添加一个加载动画。
 
-![vite-plugin-vue-app-loading](https://github.com/user-attachments/assets/95217497-7022-43c1-987a-cec101db7671)
+![vite-plugin-app-loading](https://github.com/user-attachments/assets/95217497-7022-43c1-987a-cec101db7671)
 
 ## 安装
 
 ```bash
-npm i vite-plugin-vue-app-loading -D
+npm i vite-plugin-app-loading -D
 ```
 
 ## 使用
 
 ```ts
 // vite.config.ts
-import AppLoading from 'vite-plugin-vue-app-loading'
+import AppLoading from 'vite-plugin-app-loading'
 
 export default defineConfig({
   plugins: [
@@ -42,7 +42,7 @@ loadingFadeOut()
 - 在你的 `global.d.ts` 文件添加下面这句：
 
   ```ts
-  /// <reference types="vite-plugin-vue-app-loading/client" />
+  /// <reference types="vite-plugin-app-loading/client" />
   ```
 
 - 在你的 `tsconfig.json` 中，将以下内容添加到你的 `compilerOptions.types` 数组中：
@@ -53,7 +53,7 @@ loadingFadeOut()
     "compilerOptions": {
       // ...
       "types": [
-        "vite-plugin-vue-app-loading/client"
+        "vite-plugin-app-loading/client"
       ]
     }
   }
@@ -81,7 +81,7 @@ loadingFadeOut()
 
 ```ts
 // vite.config.ts
-import AppLoading from 'vite-plugin-vue-app-loading'
+import AppLoading from 'vite-plugin-app-loading'
 
 export default defineConfig({
   plugins: [

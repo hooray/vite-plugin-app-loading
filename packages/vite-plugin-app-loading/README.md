@@ -1,24 +1,24 @@
-# vite-plugin-vue-app-loading
+# vite-plugin-app-loading
 
-[![NPM version](https://img.shields.io/npm/v/vite-plugin-vue-app-loading?color=a1b858&label=)](https://www.npmjs.com/package/vite-plugin-vue-app-loading)
+[![NPM version](https://img.shields.io/npm/v/vite-plugin-app-loading?color=a1b858&label=)](https://www.npmjs.com/package/vite-plugin-app-loading)
 
 **English** | [中文](./README.CN.md)
 
 Add a loading animation to your Vue app.
 
-![vite-plugin-vue-app-loading](https://github.com/user-attachments/assets/95217497-7022-43c1-987a-cec101db7671)
+![vite-plugin-app-loading](https://github.com/user-attachments/assets/95217497-7022-43c1-987a-cec101db7671)
 
 ## Installation
 
 ```bash
-npm i vite-plugin-vue-app-loading -D
+npm i vite-plugin-app-loading -D
 ```
 
 ## Usage
 
 ```ts
 // vite.config.ts
-import AppLoading from 'vite-plugin-vue-app-loading'
+import AppLoading from 'vite-plugin-app-loading'
 
 export default defineConfig({
   plugins: [
@@ -42,7 +42,7 @@ There are two ways of telling typescript about the types of the virtual import:
 - In your `global.d.ts` file add the following line:
 
   ```ts
-  /// <reference types="vite-plugin-vue-app-loading/client" />
+  /// <reference types="vite-plugin-app-loading/client" />
   ```
 
 - In your `tsconfig.json` add the following to your compilerOptions.types array:
@@ -53,7 +53,7 @@ There are two ways of telling typescript about the types of the virtual import:
     "compilerOptions": {
       // ...
       "types": [
-        "vite-plugin-vue-app-loading/client"
+        "vite-plugin-app-loading/client"
       ]
     }
   }
@@ -81,7 +81,7 @@ Create a `loading.html` file at the root directory:
 
 ```ts
 // vite.config.ts
-import AppLoading from 'vite-plugin-vue-app-loading'
+import AppLoading from 'vite-plugin-app-loading'
 
 export default defineConfig({
   plugins: [

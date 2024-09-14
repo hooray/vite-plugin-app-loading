@@ -1,18 +1,18 @@
 {
-  "name": "vite-plugin-vue-app-loading",
+  "name": "vite-plugin-app-loading",
   "type": "module",
   "version": "0.2.1",
   "description": "",
   "author": "Hooray <304327508@qq.com>",
   "license": "MIT",
-  "homepage": "https://github.com/hooray/vite-plugin-vue-app-loading",
+  "homepage": "https://github.com/hooray/vite-plugin-app-loading",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hooray/vite-plugin-vue-app-loading.git",
-    "directory": "packages/vite-plugin-vue-app-loading"
+    "url": "git+https://github.com/hooray/vite-plugin-app-loading.git",
+    "directory": "packages/vite-plugin-app-loading"
   },
   "bugs": {
-    "url": "https://github.com/hooray/vite-plugin-vue-app-loading/issues"
+    "url": "https://github.com/hooray/vite-plugin-app-loading/issues"
   },
   "keywords": [],
   "exports": {

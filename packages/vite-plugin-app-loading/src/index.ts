@@ -16,7 +16,7 @@ export default function (appLoadingHtmlPath?: string): PluginOption {
   const virtualModuleId = 'virtual:app-loading'
   const resolvedVirtualModuleId = `\0${virtualModuleId}`
   return {
-    name: 'vite-plugin-vue-app-loading',
+    name: 'vite-plugin-app-loading',
     resolveId(id) {
       if (id === virtualModuleId) {
         return resolvedVirtualModuleId

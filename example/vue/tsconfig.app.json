@@ -8,7 +8,7 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "types": [
-      "vite-plugin-vue-app-loading/client"
+      "vite-plugin-app-loading/client"
     ],
     "allowImportingTsExtensions": true,
     "strict": true,
