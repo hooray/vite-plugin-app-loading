@@ -13,18 +13,20 @@
     "dev:react": "pnpm build && pnpm -F react dev",
     "build": "pnpm -F vite-plugin-app-loading build",
     "lint:eslint": "eslint . --cache --fix",
-    "postinstall": "simple-git-hooks",
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "simple-git-hooks",
+    "taze": "taze minor -wIr",
     "release": "bumpp -r"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.5.1",
-    "@types/node": "^22.5.4",
-    "bumpp": "^9.5.2",
-    "cz-git": "^1.9.4",
-    "eslint": "^9.10.0",
+    "@antfu/eslint-config": "^3.7.3",
+    "@types/node": "^22.7.5",
+    "bumpp": "^9.7.1",
+    "cz-git": "^1.10.1",
+    "eslint": "^9.12.0",
     "lint-staged": "^15.2.10",
-    "simple-git-hooks": "^2.11.1"
+    "simple-git-hooks": "^2.11.1",
+    "taze": "^0.17.2"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
