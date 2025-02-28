@@ -1,8 +1,8 @@
+import type { PluginOption } from 'vite'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import url from 'node:url'
-import type { PluginOption } from 'vite'
 
 async function getAppLoadingHtml(filePath: string = 'loading.html'): Promise<string> {
   let appLoadingHtmlPath = path.join(process.cwd(), filePath)

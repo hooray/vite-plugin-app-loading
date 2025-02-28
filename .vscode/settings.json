@@ -17,5 +17,6 @@
     "json",
     "jsonc",
     "yaml"
-  ]
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
