@@ -17,6 +17,7 @@
   "keywords": [],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
@@ -34,8 +35,11 @@
   "scripts": {
     "build": "tsdown --format esm --format cjs"
   },
+  "peerDependencies": {
+    "vite": "^6.0.0 || ^7.0.0 || ^8.0.0"
+  },
   "devDependencies": {
-    "tsdown": "^0.12.6",
-    "vite": "^6.3.5"
+    "tsdown": "^0.21.8",
+    "vite": "^8.0.8"
   }
 }

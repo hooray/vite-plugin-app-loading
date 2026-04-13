@@ -4,12 +4,19 @@ import path from 'node:path'
 import process from 'node:process'
 import url from 'node:url'
 
-async function getAppLoadingHtml(filePath: string = 'loading.html'): Promise<string> {
-  let appLoadingHtmlPath = path.join(process.cwd(), filePath)
-  if (!fs.existsSync(appLoadingHtmlPath)) {
-    appLoadingHtmlPath = url.fileURLToPath(new URL('../loading.html', import.meta.url))
+const defaultAppLoadingHtmlPath = url.fileURLToPath(new URL('../loading.html', import.meta.url))
+
+function getAppLoadingHtml(filePath?: string): string {
+  if (!filePath) {
+    return fs.readFileSync(defaultAppLoadingHtmlPath, 'utf8')
   }
-  return await fs.readFileSync(appLoadingHtmlPath, 'utf8')
+
+  const appLoadingHtmlPath = path.join(process.cwd(), filePath)
+  if (!fs.existsSync(appLoadingHtmlPath)) {
+    return fs.readFileSync(defaultAppLoadingHtmlPath, 'utf8')
+  }
+
+  return fs.readFileSync(appLoadingHtmlPath, 'utf8')
 }
 
 export default function (appLoadingHtmlPath?: string): PluginOption {
@@ -43,8 +50,8 @@ export default function (appLoadingHtmlPath?: string): PluginOption {
     },
     enforce: 'pre',
     transformIndexHtml: {
-      handler: async html => html.replace(/<\/body>/, `${
-        `<div data-app-loading style="position: fixed; top: 0; left: 0; z-index: 10000; width: 100vw; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; user-select: none;">${await getAppLoadingHtml(appLoadingHtmlPath)}</div>`
+      handler: html => html.replace(/<\/body>/, `${
+        `<div data-app-loading style="position: fixed; top: 0; left: 0; z-index: 10000; width: 100vw; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; user-select: none;">${getAppLoadingHtml(appLoadingHtmlPath)}</div>`
       }</body>`),
       order: 'pre',
     },

@@ -1,7 +1,7 @@
 {
   "name": "vue",
   "type": "module",
-  "version": "0.4.0",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -9,13 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.37"
+    "vue": "^3.5.32"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.4",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5",
+    "@types/node": "^25.6.0",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.8",
     "vite-plugin-app-loading": "workspace:*",
-    "vue-tsc": "^2.2.10"
+    "vue-tsc": "^3.2.6"
   }
 }

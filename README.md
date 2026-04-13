@@ -27,11 +27,14 @@ export default defineConfig({
 })
 ```
 
+If no argument is passed, the plugin uses the built-in `loading.html`.
+
 Hide the loading animation at the right time:
 
 ```ts
 // src/main.ts
 import { loadingFadeOut } from 'virtual:app-loading'
+
 loadingFadeOut()
 ```
 
@@ -61,7 +64,7 @@ There are two ways of telling typescript about the types of the virtual import:
 
 ## Custom animations
 
-Create a `loading.html` file at the root directory:
+Create a `loading.html` file at the root directory and pass its path explicitly:
 
 ```html
 <style>
@@ -90,7 +93,7 @@ export default defineConfig({
 })
 ```
 
-![](https://github.com/user-attachments/assets/b05f8157-2f06-44af-b8bb-fa53701daf29)
+![example](https://github.com/user-attachments/assets/b05f8157-2f06-44af-b8bb-fa53701daf29)
 
 > [!TIP]
 > You can find inspiration from the following websites, which all provide CSS-only loading animations that are perfect for use with this plugin.

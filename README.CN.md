@@ -27,11 +27,14 @@ export default defineConfig({
 })
 ```
 
+不传参数时会直接使用插件内置的 `loading.html`。
+
 在合适的时机隐藏加载动画：
 
 ```ts
 // src/main.ts
 import { loadingFadeOut } from 'virtual:app-loading'
+
 loadingFadeOut()
 ```
 
@@ -61,7 +64,7 @@ loadingFadeOut()
 
 ## 自定义动画
 
-在应用根目录创建 `loading.html` 文件：
+在应用根目录创建 `loading.html` 文件，并显式传入文件路径：
 
 ```html
 <style>
@@ -90,7 +93,7 @@ export default defineConfig({
 })
 ```
 
-![](https://github.com/user-attachments/assets/b05f8157-2f06-44af-b8bb-fa53701daf29)
+![example](https://github.com/user-attachments/assets/b05f8157-2f06-44af-b8bb-fa53701daf29)
 
 > [!TIP]
 > 你可以从下列网站中找找灵感，它们都提供了纯 CSS 的加载动画，非常适合搭配本插件一起使用。
