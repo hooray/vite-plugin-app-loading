@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-app-loading",
   "type": "module",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "",
   "author": "Hooray <304327508@qq.com>",
   "license": "MIT",
